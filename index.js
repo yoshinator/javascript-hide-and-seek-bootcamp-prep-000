@@ -25,8 +25,7 @@ function nestedTarget(){
 //likey
 function increaseRankBy(n){
   // Select all the li in ul.ranked-list 
-    const rankedList = document.querySelectorAll('ul.ranked-list li');
-  // Increase the ranks by n in rankedLis
+  const rankedList = document.querySelectorAll('ul.ranked-list li');
   for (let i = 0; i < rankedList.length; i++){
   rankedList[i].innerHTML = parseInt(rankedList[i].innerHTML) +n
   }
