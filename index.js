@@ -21,7 +21,14 @@ function nestedTarget(){
 // } 
 
 
-
+function increaseRankBy(n){
+  // Select all the li in ul.ranked-list 
+    const rankedLis = document.querySelectorAll('ul.ranked-list li');
+  // Increase the ranks by n in rankedLis
+  for (let i = 0; i < rankedLis.length; i++){
+   rankedLis[i].innerHTML += n
+  }
+}
 
 //removes the deepest child in #grand-node and appends it to #app
 function deepestChild(){
