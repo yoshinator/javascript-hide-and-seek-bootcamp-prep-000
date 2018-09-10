@@ -8,6 +8,8 @@ function nestedTarget(){
   getFirstSelector('#app').appendChild(getFirstSelector('.target'));
 }
 
+
+// no likey
 // function increaseRankBy(n){
 // var ul = document.getElementsByClassName('ranked-list');
 // var list1 = ul[0].getElementsByTagName('li');
@@ -20,13 +22,13 @@ function nestedTarget(){
 // }
 // } 
 
-
+//likey
 function increaseRankBy(n){
   // Select all the li in ul.ranked-list 
-    const rankedLis = document.querySelectorAll('ul.ranked-list li');
+    const rankedList = document.querySelectorAll('ul.ranked-list li');
   // Increase the ranks by n in rankedLis
-  for (let i = 0; i < rankedLis.length; i++){
-   rankedLis[i].innerHTML += n
+  for (let i = 0; i < rankedList.length; i++){
+  rankedList[i].innerHTML = parseInt(rankedList[i].innerHTML) +n
   }
 }
 
